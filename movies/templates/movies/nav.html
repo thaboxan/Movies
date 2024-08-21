@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      div {
+        background-color: #f8f9fa;
+        padding: 10px;
+        text-align: center;
+      }
+
+      a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <div>
+    <a href="{%url 'home'%}">home</a>
+    <a href="{%url 'about'%}">about</a>
+  </div>
+  {%block content%} {%endblock%}
+</html>
